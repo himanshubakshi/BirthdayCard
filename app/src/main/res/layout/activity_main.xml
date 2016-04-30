@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="himanshu.bakshi.com.birthdaycard.MainActivity">
+
+
+    <ImageView
+        android:src="@drawable/birthday_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/happy_birthday_textview"
+        android:text="Happy Birthday"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:textSize="36sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-lite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ariv!"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/happy_birthday_textview"
+        android:fontFamily="sans-serif-lite"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/birthday_cake"
+        android:layout_centerInParent="true"
+        android:id="@+id/cake_imageview"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cake_imageview"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gift1"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gift2"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gift3"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:text="You are only young once, but you can be immature forever!!"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:layout_margin="18dp"
+        android:fontFamily="sans-serif-lite"
+       android:textStyle="italic"/>
+
+</RelativeLayout>
